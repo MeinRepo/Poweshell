@@ -6,7 +6,7 @@ New-AzAvailabilitySet `
    -Location "EastUS" `
    -Name "AvblSet" `
    -ResourceGroupName "ResGrp" `
-   -Sku aligned `
+   -Sku aligned `   # Use 'Aligned' for virtual machines with managed disks and 'Classic' for virtual machines with unmanaged disks. Default value is 'Classic'.
    -PlatformFaultDomainCount 2 `
    -PlatformUpdateDomainCount 2
 $cred = Get-Credential
