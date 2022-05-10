@@ -1,0 +1,3 @@
+--Register an Azure virtual machine as an Azure DSC node
+Register-AzureRmAutomationDscNode -AutomationAccountName "Contoso17" -AzureVMName "VirtualMachine01" -ResourceGroupName "ResourceGroup01"
+         -NodeConfigurationName "ContosoConfiguration.webserver"
