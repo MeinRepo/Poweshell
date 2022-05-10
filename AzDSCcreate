@@ -29,6 +29,6 @@ Configuration MyDscConfiguration
 }
 
 MyDscConfiguration
-=====
+=====https://docs.microsoft.com/en-us/powershell/dsc/configurations/configurations?view=dsc-1.1
 . .\MyDscConfiguration.ps1
 MyDscConfiguration -ComputerName 'MyTestNode'
