@@ -1,0 +1,34 @@
+--https://docs.microsoft.com/en-us/powershell/module/azurerm.automation/register-azurermautomationdscnode?view=azurermps-6.13.0
+Register-AzureRmAutomationDscNode -AutomationAccountName "Contoso17" 
+                                  -AzureVMName "VirtualMachine01" 
+				  -ResourceGroupName "ResourceGroup01"
+                                  -NodeConfigurationName "ContosoConfiguration.webserver"
+				  
+				  
+ 
+- Configurati onMode 'ApplyOnly'====>Change the ConfigurationMode parameter from ApplyOnly to ApplyAndAutocorrect
+==============================================================================================================================================================================================
+
+				  
+Configuration MyDscConfiguration
+{
+    Node @('localhost', 'Server01')
+    {
+        WindowsFeature MyFeatureInstance
+        {
+            Ensure = 'Present'
+            Name = 'RSAT'
+        }
+
+        WindowsFeature My2ndFeatureInstance
+        {
+            Ensure = 'Present'
+            Name = 'Bitlocker'
+        }
+    }
+}
+
+MyDscConfiguration
+=====
+. .\MyDscConfiguration.ps1
+MyDscConfiguration -ComputerName 'MyTestNode'
