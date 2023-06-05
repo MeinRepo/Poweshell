@@ -13,7 +13,7 @@ Register-AzureRmAutomationDscNode -AutomationAccountName "Contoso17"
  
 - Configurati onMode 'ApplyOnly'====>Change the ConfigurationMode parameter from ApplyOnly to ApplyAndAutocorrect
 ==============================================================================================================================================================================================
-
+DSC:
 				  
 Configuration MyDscConfiguration
 {
