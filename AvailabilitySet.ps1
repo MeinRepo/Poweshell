@@ -1,3 +1,4 @@
+\\This file in b1 branch is modified
 New-AzResourceGroup `
    -Name ResGrp `
    -Location EastUS
