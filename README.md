@@ -3,5 +3,5 @@ PowerShell is a task automation and configuration management program from Micros
 
 ARM Templates deploy Azure resources (like networking, storage, sql, vms, redis, webapp, etc). And can configure those to some extent. Whereas Powershell DSC is only good for configuring VM's (not creating them)
 
-# Descibe the code
+# Descibe the code......................
 This code is simple and clear. we first define Group and Availbity Set . Then we make 3 virtual machine.
